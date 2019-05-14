@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "this little web app surveys users and the matches them based on compatability",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blair221/FriendFinder.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "javascript",
+    "html"
+  ],
+  "author": "Blair Brownlie-Edward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blair221/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/Blair221/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
