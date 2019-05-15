@@ -17,4 +17,4 @@ app.get("/survey", function(req, res) {
 
 app.listen(port, function (){
     console.log('successfully connected on localhost:'+port);
-})
+});
