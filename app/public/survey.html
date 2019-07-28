@@ -25,6 +25,7 @@
         </div>
         <a href="/api/characters">API Friends list</a>
     </div>
+    <form>
     <div class="container my-4">
         <h2>Survey Questions</h2>
         <hr>
@@ -172,6 +173,7 @@
         <button type="submit" class="btn btn-primary btn-md" id="submit">
             Submit</button>
     </div>
+    </form>
 
     <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -202,9 +204,9 @@
 
 
 
-        if ($("#name").val() !== "" && $("#photo").val() !== "") {
+        if (($("#name").val() !== "") && ($("#photo").val() !== "")) {
 
-            var userSurvey = {
+            var userData = {
                 name: $("#name").val(),
                 photo: $("#photo").val(),
                 scores: [
@@ -222,7 +224,7 @@
             };
 
             
-            $.post("/api/characters", userSurvey, function (data) {
+            $.post("/api/characters", userData, function (data) {
 
                 $("#match-name").text(data.name);
                 $("#match-img").attr("src", data.photo);
